@@ -24,6 +24,10 @@
 
 <br>
 <h1>prabhat learning git</h1>
+
+<h1>prabhat learning git</h1>
+<h1>prabhat learning git</h1>
+
 @foreach($names as $prabhat)
 <h4>{{$prabhat}}</h4>
 @endforeach
