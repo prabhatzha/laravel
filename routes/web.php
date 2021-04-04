@@ -1,9 +1,11 @@
 <?php
 
+use App\Http\Controllers\HtmlController;
 use App\Http\Controllers\NewController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\loops;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +28,6 @@ Route::view('prabhat','prabhat');
 Route::get('m', [NewController::class, 'show']);
 
 Route::get("pkj", [loops::class, 'loadloops']);
+
+Route::view('html', 'htmlview');
+Route::post("htmlform",[HtmlController::class, 'getdata']);
