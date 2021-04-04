@@ -31,3 +31,8 @@ Route::get("pkj", [loops::class, 'loadloops']);
 
 Route::view('html', 'htmlview');
 Route::post("htmlform",[HtmlController::class, 'getdata']);
+
+Route::get("database",[HtmlController::class, 'prabhat']);
+
+Route::get("model",[HtmlController::class, 'getall']);
+Route::get("model2",[HtmlController::class, 'getall2']);
